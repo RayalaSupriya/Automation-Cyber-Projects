@@ -1,0 +1,8 @@
+Nov 17 02:45:22 server sshd[32412]: Failed password for root from 185.199.110.153 port 50122 ssh2
+Nov 17 02:45:25 server sshd[32415]: Accepted password for alice from 10.0.0.5 port 41230 ssh2
+Nov 17 02:47:01 server sshd[32420]: Failed password for invalid user admin from 185.199.110.153 port 50411 ssh2
+Nov 17 02:48:22 server sshd[32421]: Failed password for root from 185.199.110.153 port 50123 ssh2
+Nov 17 02:48:59 server sshd[32422]: Failed password for root from 203.0.113.55 port 50124 ssh2
+Nov 17 02:49:40 server sshd[32423]: Failed password for root from 185.199.110.153 port 50125 ssh2
+Nov 17 02:50:12 server sshd[32424]: Failed password for root from 185.199.110.153 port 50126 ssh2
+Nov 17 02:50:43 server sshd[32425]: Failed password for root from 185.199.110.153 port 50127 ssh2
