@@ -1,42 +1,45 @@
 🔐 Failed Login Detector (Version 1)
 📌 Overview
 
-This script analyzes authentication logs (auth.log) to detect failed login attempts and highlight potential brute-force attacks.
+This script analyzes Linux authentication logs (auth.log) to detect failed SSH login attempts and identify potential brute-force attacks.
 It is the first project in my Security Automation Engineer & SOC Analyst learning roadmap.
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🚀 Features
 
 Parses Linux SSH authentication logs
 
-Extracts IP addresses using regex
+Extracts attacker IP addresses using regex
 
 Counts failed login attempts per IP
 
-Highlights suspicious IPs
+Displays all failed attempts clearly
 
-Provides clean summary output
-
+Helps identify suspicious or brute-force activity
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🧠 How It Works
 
-Reads each line from auth.log
+Reads the log file line by line
 
-Uses regex to identify failed login events
+Uses a regex pattern to detect Failed password events
 
-Extracts the attacker’s IP address
+Extracts the IP address from each failed login
 
-Keeps count using Python defaultdict
+Tracks the number of failed attempts per IP
 
-Prints all IPs and their failed attempts
-
+Prints a summary of all detected IPs
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📁 File Structure
 failed-login-detector/
 │── auth.log
 │── failed_login_detector_v1.py
 │── README.md
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ▶️ Run the Script
-python3 failed_login_detector_v1.py
 
+Make sure you are inside the project folder, then run:
+
+python3 failed_login_detector_v1.py
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📌 Sample Output
 🔍 Suspicious Failed Login Attempts Detected:
 
@@ -44,13 +47,32 @@ IP: 185.199.110.153 | Failed Attempts: 6
 IP: 203.0.113.55    | Failed Attempts: 1
 
 ✔ Analysis complete.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🛠 Next Version (Coming Soon)
 
-🛠 Next Version (coming soon)
+The next iteration of this project will include:
 
-Alerts for brute-force
+🔔 Alerting for brute-force thresholds
 
-JSON report export
+📄 JSON reporting
 
-Email / Slack notifications
+📧 Email or Slack notifications
 
-Configurable thresholds
+⚙️ Configurable log paths & thresholds
+
+🧪 Unit tests
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🌟 Why This Project Matters
+
+This is a real SOC analysis task that automation engineers handle daily.
+Understanding log parsing and detection logic is the foundation of:
+
+SOC investigations
+
+Threat detection engineering
+
+Security automation & SOAR
+
+AI-driven security analytics
+
+This project sets the base for more advanced automation.
