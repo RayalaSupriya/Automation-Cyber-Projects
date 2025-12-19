@@ -1,0 +1,12 @@
+[
+  {
+    "ip": "185.199.110.153",
+    "failed_attempts": 6,
+    "suspicious": true
+  },
+  {
+    "ip": "203.0.113.55",
+    "failed_attempts": 1,
+    "suspicious": false
+  }
+]
